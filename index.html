@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>STICKO EXAMPLE by Kosta Samardziev</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/sticko.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.sticko.js"></script>
+
+</head>
+<body>
+    <div class="sticked-header">
+        Sticked header
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="row-fluid holder " id="1">
+            <div class="span8 content">
+                <h1>Some content here</h1>
+                <p>
+                    Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.
+                </p>
+            </div>
+
+            <div class="tools">TOOLS</div>
+
+        </div>
+        <hr />
+        <div class="row-fluid holder " id="Div1">
+            <div class="span8 content">
+                <h1>Some content here</h1>
+                <p>
+                    Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.
+                </p>
+            </div>
+
+            <div class="tools">TOOLS</div>
+
+        </div>
+        <hr />
+        <div class="row-fluid holder " id="Div2">
+            <div class="span8 content">
+                <h1>Some content here</h1>
+                <p>
+                    Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.
+                </p>
+            </div>
+
+            <div class="tools">TOOLS</div>
+
+        </div>
+        <hr />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.holder').sticko({
+                side: 'left',
+                marginLeft: 0
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿.holder {   
+    display: inline-block;/*to wrap content and sidbar*/
+}
+
+.tools {  /*this is my sidebar class*/
+    position: relative;      
+    float: left;
+   
+}
+
