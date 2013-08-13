@@ -1,21 +1,12 @@
 ﻿/*#########################################################
  * Name:         STICKO plugin
- * Version:      0.1v
- * Description:  Creates an sticky sidebar for each element
+ * Version:      0.2v
+ * Description:  Creates an sticky sidebar for each element [left and right]
  * Author:       Kosta Samardziev
  * Email:        kosta.samardziev@gmail.com
  * Date:         summer 2013
  *#########################################################
  */
-
-/*
- * REQUIREMENTS: 
- * CSS:
- *      -holder element needs to be position relative
- *      -sidebar element needs to be position absoulute
- */
-
-
 (function ($) {
     //start
     $.fn.sticko = function (params) {
