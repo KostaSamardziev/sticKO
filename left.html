@@ -4,10 +4,10 @@
     <title>STICKO EXAMPLE by Kosta Samardziev</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/sticko.css" rel="stylesheet" />
-    
+
 
     <script src="js/jquery.js"></script>
-    <script src="js/jquery.sticko.js"></script>    
+    <script src="js/jquery.sticko.min.js"></script>
 </head>
 <body>
     <div class="sticked-header">
@@ -17,7 +17,7 @@
     <div class="spacer"></div>
     <div class="container">
         <div class="row-fluid holder " id="1">
-             <div class="tools">TOOLS</div>
+            <div class="tools">TOOLS</div>
             <div class="span8 content">
                 <h1>Some content here</h1>
                 <p>
@@ -25,7 +25,7 @@
                 </p>
             </div>
 
-           
+
 
         </div>
         <hr />
@@ -38,12 +38,12 @@
                 </p>
             </div>
 
-            
+
 
         </div>
         <hr />
         <div class="row-fluid holder " id="Div2">
-             <div class="tools">TOOLS</div>
+            <div class="tools">TOOLS</div>
             <div class="span8 content">
                 <h1>Some content here</h1>
                 <p>
@@ -51,7 +51,7 @@
                 </p>
             </div>
 
-           
+
 
         </div>
         <hr />
@@ -59,8 +59,10 @@
     <script>
         $(document).ready(function () {
             $('.holder').sticko({
-                side: 'right',
-                marginRight:0
+                side: 'left',
+                marginRight: 20,
+                sidebarClass: 'tools',
+                topTollerance: 50//this is for fixed header
             });
         });
     </script>

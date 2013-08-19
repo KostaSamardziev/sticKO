@@ -5,7 +5,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/sticko.css" rel="stylesheet" />
     <script src="js/jquery.js"></script>
-    <script src="js/jquery.sticko.js"></script>
+    <script src="js/jquery.sticko.min.js"></script>
 
 </head>
 <body>
@@ -55,8 +55,10 @@
     <script>
         $(document).ready(function () {
             $('.holder').sticko({
-                side: 'left',
-                marginLeft: 0
+                side: 'right',
+                marginLeft: 0,
+                sidebarClass: 'tools',
+                topTollerance: 50//this is for fixed header
             });
         });
     </script>

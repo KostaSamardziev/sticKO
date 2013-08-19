@@ -1,6 +1,6 @@
 ﻿/*#########################################################
  * Name:         STICKO plugin
- * Version:      0.2v
+ * Version:      0.3v
  * Description:  Creates an sticky sidebar for each element [left and right]
  * Author:       Kosta Samardziev
  * Email:        kosta.samardziev@gmail.com
@@ -12,10 +12,10 @@
     $.fn.sticko = function (params) {
         var defaultParametars = {
             side: 'left',
-            marginTop: 20,
-            marginBottom: 20,
-            marginLeft: 20,
-            marginRight: 20,
+            marginTop: 0,
+            marginBottom: 0,
+            marginLeft: 0,
+            marginRight: 0,
             topTollerance: 50,
             sidebarClass: 'tools'
         }
@@ -23,19 +23,17 @@
         //extend defaults
         params = $.extend({}, defaultParametars, params);
         //setup initial padding
-        //TODO: take this from css class???
-        //is it better?
         $('.' + params.sidebarClass).each(function () {
             $(this).css({
                 left: params.marginLeft,
-                'margin-right': params.side == 'right' ? params.marginLeft + params.marginRight : 'auto',
+                'margin-right': params.side == 'left' ? params.marginLeft + params.marginRight : 'auto',
                 top: params.marginTop,
                 position: 'relative'
             });
         });
 
         var sidebarWidth = $(this).find('.' + params.sidebarClass).first().width() + params.marginRight + params.marginLeft;
-        if (params.side == 'right') {
+        if (params.side == 'left') {
             console.log("right");
             var sidebarClone = $("<div></div>", {
                 "class": 'sidebar-clone',
@@ -68,7 +66,7 @@
                         left: params.marginLeft,
                         bottom: 'auto'
                     });
-                    if (params.side == 'right') {
+                    if (params.side == 'left') {
                         $(this).find('.sidebar-clone').hide();
                     }
 
@@ -84,7 +82,7 @@
                         left: sidebarLeft,
                         bottom: 'auto'
                     });
-                    if (params.side == 'right') {
+                    if (params.side == 'left') {
                         $(this).find('.sidebar-clone').show();
                     }
 
@@ -97,7 +95,7 @@
                         top: $holder.height() - $sidebar.height() - params.marginBottom,
                         left: params.marginLeft
                     });
-                    if (params.side == 'right') {
+                    if (params.side == 'left') {
                         $(this).find('.sidebar-clone').hide();
                     }
 
