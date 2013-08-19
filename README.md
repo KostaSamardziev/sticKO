@@ -2,12 +2,12 @@ sticKO
 ======
 
 jQuery plugin for creating sticky sidebars for multiple elements.
-
+<hr/>
 How to use it?
 
-Html structure:
-	for left sided: <holder><sidebar></sidebar><content></content></holder>
-	for right sided: <holder><content></content><sidebar></sidebar></holder>
+Html structure:<br/>
+	for left sided: <pre><holder><sidebar></sidebar><content></content></holder></pre>
+	for right sided: <pre><holder><content></content><sidebar></sidebar></holder></pre>
 jQuery parameters:
 	{
         side: 'left',//[left or right]
